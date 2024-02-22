@@ -1,5 +1,6 @@
 package com.example.task01;
 
+import com.example.task01.models.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class GreetingController {
 
     @GetMapping(value = "/greeting")
-    public String greeting(){
-        return "Good Afternoon Saba!";
+    public Greeting greeting(){
+        Greeting greeting = new Greeting("Saba", "Afternoon");
+        return greeting;
     }
-
 }

@@ -4,11 +4,11 @@ import java.time.LocalTime;
 
 public class Greeting {
     private String name;
-    private LocalTime timeOfDay;
+    private String timeOfDay;
 
     public Greeting(){}
 
-    public Greeting(String name, LocalTime timeOfDay){
+    public Greeting(String name, String timeOfDay){
         this.name = name;
         this.timeOfDay = timeOfDay;
     }
@@ -21,11 +21,11 @@ public class Greeting {
         this.name = name;
     }
 
-    public LocalTime getTimeOfDay() {
+    public String getTimeOfDay() {
         return timeOfDay;
     }
 
-    public void setTimeOfDay(LocalTime timeOfDay) {
+    public void setTimeOfDay(String timeOfDay) {
         this.timeOfDay = timeOfDay;
     }
 }
